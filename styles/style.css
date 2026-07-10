@@ -6,13 +6,13 @@
     font-size: 16px;
     font-family: 'Miranda Sans';
 
-    /* color variables */
+    /* Color variables */
     --main-color: hsl(231, 69%, 15%);
     --secondary-color: hsl(223, 27%, 90%);
     --tertiary-color: hsl(46, 82%, 38%);
     --quaternary-color: hsl(233, 19%, 18%);
 
-    /* margin variables */
+    /* Margin variables */
     --heading-margin: 7px 0;
 }
 
@@ -61,7 +61,7 @@ p {
     margin-inline: auto;
 }
 
-/* hero banner */
+/* Hero banner */
 
 .hero-banner {
     background-color: var(--main-color);
