@@ -5,8 +5,30 @@
 :root {
     font-size: 16px;
 
-    /* color vaiables */
-    --main-color: hsl(232, 60%, 45%);
+    /* color variables */
+    --main-color: hsl(231, 69%, 15%);
+    --secondary-color: hsl(222, 43%, 78%);
+    --ternary-color: hsl(46, 82%, 38%);
+
+    /* margin variables */
+    --heading-margin: 7px 0;
+}
+
+@font-face {
+    font-family: 'Miranda Sans';
+    src: url('../resources/fonts/Miranda_Sans/MirandaSans-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Gelasio';
+    src: url('../resources/fonts/Gelasio/Gelasio-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../resources/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('../resources/fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf') format('truetype');
 }
 
 body {
@@ -14,28 +36,39 @@ body {
 }
 
 h1 {
+    color: var(--secondary-color);
     font-size: 60px;
-    margin: 10px 0;
+    margin: var(--heading-margin);
 }
 
 h2 {
-    font-size: 40px;
-    margin: 5px 0;
+    color: var(--ternary-color);
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: var(--heading-margin);
 }
 
 /* hero banner */
 
 .hero-banner {
-    height: 500px;
+    height: 300px;
     background-color: var(--main-color);
     display: flex;
     justify-content: space-around;
 }
 
 .hero-heading {
+    font-family: 'Miranda Sans';
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.description {
+    color: var(--secondary-color);
+    margin: var(--heading-margin);
+    max-width: 400px;
+    line-height: 22px;
 }
 
 .hero-image {
