@@ -103,6 +103,34 @@ p {
     width: 100%;
 }
 
+/* Hero banner animation */
+@keyframes headingIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.hero-banner h1 {
+    opacity: 0;
+    animation: headingIn 1s forwards ease-out;
+}
+
+.hero-banner h2 {
+    opacity: 0;
+    animation: headingIn 1s .25s forwards ease-out;
+}
+
+.hero-banner p {
+    opacity: 0;
+    animation: headingIn 1s .5s forwards ease-out;
+}
+
 /* About section */
 .about {
     height: 500px;
