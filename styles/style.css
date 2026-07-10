@@ -96,6 +96,7 @@ p {
 
 .hero-image {
     width: 460px;
+    min-width: 460px; 
     display: flex;
     align-items: center;
 }
@@ -117,6 +118,16 @@ p {
     }
 }
 
+@keyframes imageIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .hero-banner h1 {
     opacity: 0;
     animation: headingIn 1s forwards ease-out;
@@ -132,6 +143,16 @@ p {
     animation: headingIn 1s .5s forwards ease-out;
 }
 
+.hero-image {
+    animation: imageIn 3s forwards ease-out;
+}
+
+@media only screen and (max-width: 850px) {
+    .hero-image, .hero-seperator {
+        display: none;
+    }
+}
+
 /* About section */
 .about {
     color: var(--main-color);
@@ -144,10 +165,21 @@ p {
 }
 .about-image {
     width: 750px;
+    min-width: 200px;
 }
 
 .about-image img {
     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
 }
 
 /* Portfolio section */
