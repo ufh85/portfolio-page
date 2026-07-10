@@ -171,3 +171,12 @@ p {
     border-radius: 8px;
     background-color: var(--secondary-color);
 }
+
+/* Footer section */
+footer {
+    background-color: var(--main-color);
+}
+
+.footer-content {
+    height: 75px;
+}
