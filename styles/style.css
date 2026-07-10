@@ -118,6 +118,18 @@ p {
     }
 }
 
+@keyframes seperatorIn {
+    0% {
+        transform: scaleY(0%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(100%);
+        opacity: 1;
+    }
+}
+
 @keyframes imageIn {
     0% {
         opacity: 0;
@@ -141,6 +153,10 @@ p {
 .hero-banner p {
     opacity: 0;
     animation: headingIn 1s .5s forwards ease-out;
+}
+
+.hero-seperator {
+    animation: seperatorIn .8s ease-in
 }
 
 .hero-image {
