@@ -14,7 +14,7 @@
     --pentarnery-color: hsl(226, 35%, 85%);
 
     /* Margin variables */
-    --heading-margin: 12px 0;
+    --heading-margin: 7px 0;
 }
 
 @font-face {
@@ -48,9 +48,25 @@ h2 {
     color: var(--tertiary-color);
     text-transform: uppercase;
     font-size: 28px;
+    margin: var(--heading-margin);
 }
 
 h3 {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    background-color: var(--quaternary-color);
+    margin: 12px 0 18px;
+    height: 2px;
+    width: 35px;
+}
+
+h4 {
     color: var(--main-color);
     font-size: 1.2rem;
     font-weight: 700;
@@ -195,7 +211,6 @@ p {
 }
 
 .about-text p {
-    margin: 7px 0 0;
     max-width: 500px;
 }
 
