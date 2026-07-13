@@ -252,6 +252,12 @@ p {
     border-radius: 8px;
     background-color: var(--secondary-color);
     display: flex;
+    transition: box-shadow .3s ease-in, transform .3s ease-in;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
 }
 
 .thumbnail {
